@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Commonwealth of New Ridge</title>
+<meta name="description" content="The Commonwealth of New Ridge, a federal presidential republic founded on 6 September 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#14103a;--card:#27205e;--cream:#ffffff;--red:#2fc98a;--orange:#036b45;--yellow:#9fe3c3;--green:#9a94f5;--ink:#14103a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--cream);font:400 1.05rem/1.65 Poppins,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:"Bagel Fat One",system-ui,sans-serif;font-weight:400;margin:0;line-height:1}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-size:1.6rem}
+nav a{color:var(--cream);text-decoration:none;font-weight:600;margin-left:18px;font-size:.95rem}
+nav a:hover{color:var(--yellow)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.hero{position:relative;padding:30px 0 90px}
+h1{font-size:clamp(2.6rem,9vw,4.5rem);letter-spacing:.5px;margin-bottom:28px;max-width:560px}
+h1 .r{color:var(--red)}
+.hero p{max-width:470px;font-size:1.1rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{font:600 1rem Poppins,sans-serif;padding:15px 26px;border-radius:999px;border:0;text-decoration:none;color:var(--ink);background:var(--cream);transition:transform .15s}
+.btn.o{background:var(--orange);color:#fff}
+.btn:hover{transform:translateY(-2px) rotate(-1.5deg)}
+.art{position:absolute;right:0;top:10px;width:min(38%,350px)}
+.art svg{width:100%;height:auto;display:block}
+.chip{background:var(--card);border-radius:14px;padding:14px 18px;margin-top:-6px;box-shadow:0 8px 20px rgba(0,0,0,.35);font-size:.8rem}
+.chip small{display:block;color:#b4b0e0;font-size:.72rem;letter-spacing:.04em}
+.chip b{font-family:"Bagel Fat One",sans-serif;font-weight:400;font-size:1.05rem;display:block;margin-top:2px}
+.chip:nth-of-type(1){transform:rotate(-2deg)}
+.chip:nth-of-type(2){transform:rotate(1.5deg) translateX(10px);margin-top:14px}
+.chip i{display:inline-block;width:10px;height:10px;margin-right:6px;background:var(--orange)}
+.chip:nth-of-type(2) i{background:var(--green)}
+.conf{position:absolute;width:12px;height:12px;background:var(--yellow);transform:rotate(45deg);animation:fall 6s ease-in-out infinite alternate}
+.conf.w{background:#d9d6ff;width:10px;height:22px;transform:rotate(12deg)}
+@keyframes fall{to{translate:6px 14px}}
+.ticker{background:var(--cream);color:var(--ink);transform:rotate(-1.6deg);margin:0 -40px;padding:20px 0;overflow:hidden;white-space:nowrap}
+.ticker div{display:inline-block;font-family:"Bagel Fat One",sans-serif;font-size:1.7rem;animation:slide 28s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:90px 0 20px}
+h2{font-size:clamp(2.4rem,6vw,3.6rem);margin-bottom:14px}
+.lead{max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:40px}
+.card{background:var(--card);padding:30px 26px 34px;border-radius:6px}
+.card:nth-child(1){transform:rotate(-1.8deg)}
+.card:nth-child(2){transform:rotate(1.2deg) translateY(8px)}
+.card:nth-child(3){transform:rotate(-.8deg)}
+.big{font-family:"Bagel Fat One",sans-serif;font-size:3rem;line-height:1;color:var(--red)}
+.big.g{color:var(--green)}.big.y{color:var(--yellow)}
+.card h3{font-size:1.35rem;margin:6px 0 10px}
+.card p{margin:0;font-size:.95rem}
+.cta{margin:90px 0 40px;background:var(--orange);color:#fff;border-radius:28px;padding:50px 34px;transform:rotate(-1deg)}
+.cta h2{color:#fff}
+.cta .btn{background:#fff;color:var(--ink)}
+.cta p{max-width:520px}
+footer{padding:30px 0 50px;font-size:.85rem;color:#b4b0e0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:760px){
+.art{position:relative;width:min(78%,340px);margin:40px 0 0 auto}
+.hero{padding-bottom:60px}
+nav a{margin-left:12px}
+}
+@media(prefers-reduced-motion:reduce){.conf,.ticker div{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span class="logo">New Ridge</span><div><a href="#about">About</a><a href="#what">Government</a><a href="#join">Join</a></div></nav>
+
+<header class="hero">
+<h1>Our <span class="r">ridge.</span> Our <span class="r">commonwealth.</span></h1>
+<p>The Commonwealth of New Ridge is a self-declared sovereign state in Pennsylvania, founded on 6 September 2026. It is a federal presidential republic with a constitution, a Congress and its own national identity.</p>
+<div class="btns"><a class="btn" href="#join">Get involved</a><a class="btn o" href="#about">Learn more</a></div>
+
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 330 240" style="transform:rotate(4deg)">
+<rect x="14" y="14" width="300" height="200" rx="6" fill="#fff"/>
+<rect x="18" y="18" width="292" height="192" fill="#036b45"/>
+<rect x="18" y="18" width="94" height="192" fill="#27205e"/>
+<rect x="112" y="84" width="198" height="60" fill="#fff"/>
+<g id="stars" fill="#fff"></g>
+</svg>
+<div class="chip"><small>FOUNDED</small><b><i></i>6 September 2026</b></div>
+<div class="chip"><small>CAPITAL</small><b><i></i>Berchester</b></div>
+</div>
+
+<span class="conf" style="left:38%;top:42%"></span>
+<span class="conf w" style="left:44%;top:8%"></span>
+<span class="conf" style="left:52%;top:72%;animation-delay:-2s"></span>
+<span class="conf w" style="left:30%;top:90%;animation-delay:-3s"></span>
+<span class="conf" style="right:6%;top:84%;animation-delay:-1s"></span>
+</header>
+</div>
+
+<div class="ticker" aria-hidden="true"><div>In God We Trust ✦ Our ridge ✦ Ridgeans ✦ Our commonwealth ✦ In God We Trust ✦ Our ridge ✦ Ridgeans ✦ Our commonwealth ✦ In God We Trust ✦ Our ridge ✦ Ridgeans ✦ Our commonwealth ✦ In God We Trust ✦ Our ridge ✦ Ridgeans ✦ Our commonwealth ✦ </div></div>
+
+<div class="wrap">
+<section id="about">
+<h2>Who we are</h2>
+<p class="lead">New Ridge was founded on 6 September 2026 as a fresh start, and its constitution was ratified the same day. Its people are called Ridgeans. Its culture and symbols are loosely based on the United States, and it hopes to grow a separate national identity of its own.</p>
+<div class="grid">
+<div class="card"><div class="big">2026</div><h3>Founded 6 September</h3><p>Established with a constitution ratified 5-0 on day one.</p></div>
+<div class="card"><div class="big g">Berchester</div><h3>Our capital</h3><p>Also the most populous of our provinces.</p></div>
+<div class="card"><div class="big y">Spuds</div><h3>National food and band</h3><p>The baked potato is our national food and Genesis is our national band.</p></div>
+</div>
+</section>
+
+<section id="what">
+<h2>Government</h2>
+<p class="lead">New Ridge is a federal presidential republic. The President is head of state and head of government.</p>
+<div class="grid">
+<div class="card"><div class="big">President</div><h3>Shane Torres</h3><p>Federalist Party. In office since 6 September 2026.</p></div>
+<div class="card"><div class="big g">Vice</div><h3>Noah Rogers</h3><p>Vice President since 8 September 2026.</p></div>
+<div class="card"><div class="big y">Congress</div><h3>Two chambers</h3><p>The Council of Representatives and the Delegates-Assembly make our laws.</p></div>
+</div>
+</section>
+
+<section id="provinces">
+<h2>Our provinces</h2>
+<p class="lead">New Ridge is divided into four provinces: Berchester, New Philadelphia, Northampton and Juneau.</p>
+</section>
+
+<section id="join" style="padding-bottom:0">
+<div class="cta">
+<h2>Join the Commonwealth</h2>
+<p>New Ridge lives on Discord. Come say hello, or read the constitution first.</p>
+<div class="btns"><a class="btn" href="https://discord.gg/N7aBX2BwqN" target="_blank" rel="noopener">Join the Discord</a><a class="btn" href="https://docs.google.com/document/d/18AEI2ij6SdxH5g1cgFoY41XJIqxrWbIPjVtoPSFYU-4/edit?usp=sharing" target="_blank" rel="noopener">Read the constitution</a></div>
+</div>
+</section>
+
+<footer><span>© The Commonwealth of New Ridge</span><span>A micronation. Details from MicroWiki.</span></footer>
+</div>
+<script>
+(function(){var g=document.getElementById("stars"),cx=65,cy=114,R=36,h="";
+function star(x,y,r){var p=[];for(var i=0;i<10;i++){var a=(-90+i*36)*Math.PI/180,rr=i%2?r*.4:r;p.push((x+rr*Math.cos(a)).toFixed(1)+","+(y+rr*Math.sin(a)).toFixed(1))}return '<polygon points="'+p.join(" ")+'"/>'}
+for(var k=0;k<13;k++){var a=(-90+k*360/13)*Math.PI/180;h+=star(cx+R*Math.cos(a),cy+R*Math.sin(a),6.5)}
+g.innerHTML=h})();
+</script>
+</body>
+</html>
